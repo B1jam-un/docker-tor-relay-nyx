@@ -4,6 +4,10 @@ Docker image to setup a Tor relay with [nyx](https://nyx.torproject.org/) monito
 ![Docker Image Size](https://img.shields.io/microbadger/image-size/jarlave/tor-relay-nyx.svg)
 
 Based on [Jessfraz](https://github.com/jessfraz/dockerfiles/tree/master/tor-relay) Docker.
+Based on [jarlave](https://codeberg.org/jarlave/docker-tor-relay-nyx) Docker.
+
+This fork is to update certains functionnalities of the project.
+- Alpine version update (3.9.3 -> 3.13)
 
 ### Middle relay
 
