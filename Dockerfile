@@ -17,8 +17,8 @@ RUN addgroup -g 1000 -S tor && \
     adduser -u 1000 -S tor -G tor
 
 # need to correct a bug during the update
-RUN echo http://alpine.42.fr/mirrors/alpine/v3.13/main > /etc/apk/repositories; \
-    echo http://alpine.42.fr/mirrors/alpine/v3.13/community >> /etc/apk/repositories
+RUN echo http://alpine.42.fr/v3.13/main > /etc/apk/repositories; \
+    echo http://alpine.42.fr/v3.13/community >> /etc/apk/repositories
 
 
 RUN apk --no-cache add \
