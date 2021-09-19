@@ -16,6 +16,11 @@ ENV RELAY_MAX_MEM 512 MB
 RUN addgroup -g 1000 -S tor && \
     adduser -u 1000 -S tor -G tor
 
+# need to correct a bug during the update
+RUN echo http://alpine.42.fr/mirrors/alpine/v3.5/main > /etc/apk/repositories; \
+    echo http://alpine.42.fr/mirrors/alpine/v3.5/community >> /etc/apk/repositories
+
+
 RUN apk --no-cache add \
 	bash \
 	tor
